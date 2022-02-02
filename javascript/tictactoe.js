@@ -47,8 +47,10 @@ const checkWin = () => {
          gif.style.display = " block";
          gameOverAudio.play();
          turn = boxtext[e[0]].innerHTML;
+         if(screen.width>900){
          document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw  ) rotate(${e[5]}deg)`;
          document.querySelector('.line').style.width = "30vw";
+         }
 
          // document.querySelector('.bro').className="line";
          // document.querySelector('.bro').classList.toggle('.line');
@@ -94,7 +96,7 @@ Array.from(boxes).forEach((element) => {
       gif.style.display = " none";
       gameover2 = "false";
       count2 = 0;
-      document.querySelector('.line').style.width = "0vw";
+          document.querySelector('.line').style.width = "0vw";
    })
 
 
