@@ -31,7 +31,7 @@ nav{
 
 .container2{
    width:100vw;
-   height:85vh;
+   /* height:85vh; */
    display:flex;
    /* flex-direction: column;*/
    justify-content: center;
@@ -261,11 +261,12 @@ nav{
    }
 
    .container2{
-      display:flex;
+      /* display:flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height:100vh;
+      height:100vh; */
+      flex-wrap: wrap;
       /* justify-content: center; */
 
    }
@@ -273,7 +274,7 @@ nav{
         width:80vw;
         height:70%;
         grid-template-columns: repeat(3 , 25vw);
-       grid-template-rows:repeat(3 , 35vw);
+       grid-template-rows:repeat(3 , 25vw);
        position:relative;
        /* align-items: center; */
    }
@@ -289,10 +290,11 @@ nav{
       width:150px;
    }
    .gameinfo{
-      height:50%;
+      /* height:50%; */
       align-items: center;
       padding-left:2px;
       padding-right:2px;
+      margin-top:34px;
    }
    .gameinfo h1{
       font-size: 14px;
@@ -324,11 +326,12 @@ nav{
    }
 
    .container2{
-      display:flex;
+      /* display:flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height:100vh;
+      height:100vh; */
+      flex-wrap: wrap;
       /* justify-content: center; */
 
    }
@@ -336,7 +339,7 @@ nav{
         width:80vw;
         height:70%;
         grid-template-columns: repeat(3 , 25vw);
-       grid-template-rows:repeat(3 , 35vw);
+       grid-template-rows:repeat(3 , 25vw);
        /* align-items: center; */
    }
    .box{
@@ -351,10 +354,11 @@ nav{
       width:200px;
    }
    .gameinfo{
-      height:50%;
+      /* height:50%; */
       align-items: center;
       padding-left:2px;
       padding-right:2px;
+      margin-top:34px;
    }
    .gameinfo h1{
       font-size: 20px;
@@ -376,11 +380,12 @@ nav{
    }
 
    .container2{
-      display:flex;
+      /* display:flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height:100vh;
+      height:100vh; */
+      flex-wrap: wrap;
       /* justify-content: center; */
 
    }
@@ -397,9 +402,10 @@ nav{
       width:200px;
    }
    .gameinfo{
-      height:50%;
+      /* height:50%; */
       align-items: center;
       margin-top: 20px;
+      margin-top:34px;
    }
    .gameinfo h1{
       font-size: 23px;
@@ -421,11 +427,12 @@ nav{
    }
 
    .container2{
-      display:flex;
+      /* display:flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height:100vh;
+      height:100vh; */
+      flex-wrap: wrap;
       /* justify-content: center; */
 
    }
@@ -442,8 +449,9 @@ nav{
       width:200px;
    }
    .gameinfo{
-      height:50%;
+      /* height:50%; */
       align-items: center;
+      margin-top:34px;
    }
    .gameinfo h1{
       font-size: 30px;
@@ -460,11 +468,12 @@ nav{
       align-items: center;
    }
    .container2{
-      display:flex;
+      /* display:flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height:100vh;
+      height:100vh; */
+      flex-wrap: wrap;
       /* justify-content: center; */
 
    }
@@ -481,8 +490,9 @@ nav{
       width:200px;
    }
    .gameinfo{
-      height:50%;
+      /* height:50%; */
       align-items: center;
+      margin-top:34px;
    }
    .gameinfo div{
       display:flex;
@@ -572,7 +582,7 @@ nav{
        }
 }
 
-@media screen  and (min-height:300px) and (max-height:449px){
+/* @media screen  and (min-height:300px) and (max-height:449px){
    .gameinfo{
       margin-top:50px;
    }
@@ -610,4 +620,4 @@ nav{
    .boxtext{
       height:100px;
    }
-}
+} */
