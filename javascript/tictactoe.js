@@ -30,35 +30,104 @@ const changeTurn = () => {
 //function to check win
 const checkWin = () => {
    let boxtext = document.getElementsByClassName("boxtext");
-   let winBox = [
-      [0, 1, 2, 2.8, 5, 0],
-      [3, 4, 5, 2.8, 15, 0],
-      [6, 7, 8, 2.8, 25, 0],
-      [0, 3, 6, -7.5, 15, 90],
-      [1, 4, 7, 2.5, 15, 90],
-      [2, 5, 8, 12.5, 15, 90],
-      [2, 4, 6, 2.5, 15, 135],
-      [0, 4, 8, 3.5, 16, 45],
-   ]
-   winBox.forEach(e => {
-      if ((boxtext[e[0]].innerHTML === boxtext[e[1]].innerHTML) && (boxtext[e[1]].innerHTML === boxtext[e[2]].innerHTML) && (boxtext[e[0]].innerHTML !== "")) {
-         info.innerHTML = boxtext[e[0]].innerHTML + " Won";
-         gameover2 = "true";
-         gif.style.display = " block";
-         gameOverAudio.play();
-         turn = boxtext[e[0]].innerHTML;
-         if(screen.width>900){
-         document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw  ) rotate(${e[5]}deg)`;
-         document.querySelector('.line').style.width = "30vw";
+   if (screen.width > 900) {
+      let winBox = [
+         [0, 1, 2, 2.8, 5, 0],
+         [3, 4, 5, 2.8, 15, 0],
+         [6, 7, 8, 2.8, 25, 0],
+         [0, 3, 6, -7.5, 15, 90],
+         [1, 4, 7, 2.5, 15, 90],
+         [2, 5, 8, 12.5, 15, 90],
+         [2, 4, 6, 2.5, 15, 135],
+         [0, 4, 8, 3.5, 16, 45],
+      ]
+      winBox.forEach(e => {
+         if ((boxtext[e[0]].innerHTML === boxtext[e[1]].innerHTML) && (boxtext[e[1]].innerHTML === boxtext[e[2]].innerHTML) && (boxtext[e[0]].innerHTML !== "")) {
+            info.innerHTML = boxtext[e[0]].innerHTML + " Won";
+            gameover2 = "true";
+            gif.style.display = " block";
+            gameOverAudio.play();
+            turn = boxtext[e[0]].innerHTML;
+            // if (screen.width > 900) {
+            document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw  ) rotate(${e[5]}deg)`;
+            document.querySelector('.line').style.width = "30vw";
+            // }
+            // document.querySelector('.bro').className="line";
+            // document.querySelector('.bro').classList.toggle('.line');
          }
 
-         // document.querySelector('.bro').className="line";
-         // document.querySelector('.bro').classList.toggle('.line');
-      }
-      if ((boxtext[e[0]].innerHTML !== "") && (boxtext[e[1]].innerHTML !== "") && (boxtext[e[2]].innerHTML !== "")) {
-         count = count + 1;
-      }
-   })
+         if ((boxtext[e[0]].innerHTML !== "") && (boxtext[e[1]].innerHTML !== "") && (boxtext[e[2]].innerHTML !== "")) {
+            count = count + 1;
+         }
+      })
+   }
+
+   if (screen.width >= 700 && screen.width <= 899) {
+      let winBox = [
+         [0, 1, 2, 5, 10, 0],
+         [3, 4, 5, 5, 30, 0],
+         [6, 7, 8, 5, 50.5, 0],
+         [0, 3, 6, -15.2, 30, 90],
+         [1, 4, 7, 5, 30, 90],
+         [2, 5, 8, 25.2, 30, 90],
+         [2, 4, 6, 5, 30, 135],
+         [0, 4, 8, 5, 30, 45],
+      ]
+      winBox.forEach(e => {
+         if ((boxtext[e[0]].innerHTML === boxtext[e[1]].innerHTML) && (boxtext[e[1]].innerHTML === boxtext[e[2]].innerHTML) && (boxtext[e[0]].innerHTML !== "")) {
+            info.innerHTML = boxtext[e[0]].innerHTML + " Won";
+            gameover2 = "true";
+            gif.style.display = " block";
+            gameOverAudio.play();
+            turn = boxtext[e[0]].innerHTML;
+            // if (screen.width > 900) {
+            document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw  ) rotate(${e[5]}deg)`;
+            document.querySelector('.line').style.width = "60vw";
+            // }
+            // document.querySelector('.bro').className="line";
+            // document.querySelector('.bro').classList.toggle('.line');
+         }
+
+         if ((boxtext[e[0]].innerHTML !== "") && (boxtext[e[1]].innerHTML !== "") && (boxtext[e[2]].innerHTML !== "")) {
+            count = count + 1;
+         }
+      })
+   }
+
+
+   if (screen.width <= 699) {
+      let winBox = [
+         [0, 1, 2, 7, 12, 0],
+         [3, 4, 5, 7, 38, 0],
+         [6, 7, 8, 7, 63, 0],
+         [0, 3, 6, -17.7, 37, 90],
+         [1, 4, 7, 7.5, 37, 90],
+         [2, 5, 8, 32.7, 37.5, 90],
+         [2, 4, 6, 7, 38, 135],
+         [0, 4, 8, 8, 37.7, 45],
+      ]
+      winBox.forEach(e => {
+         if ((boxtext[e[0]].innerHTML === boxtext[e[1]].innerHTML) && (boxtext[e[1]].innerHTML === boxtext[e[2]].innerHTML) && (boxtext[e[0]].innerHTML !== "")) {
+            info.innerHTML = boxtext[e[0]].innerHTML + " Won";
+            gameover2 = "true";
+            gif.style.display = " block";
+            gameOverAudio.play();
+            turn = boxtext[e[0]].innerHTML;
+            // if (screen.width > 900) {
+            document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw  ) rotate(${e[5]}deg)`;
+            document.querySelector('.line').style.width = "65vw";
+            // }
+            // document.querySelector('.bro').className="line";
+            // document.querySelector('.bro').classList.toggle('.line');
+         }
+
+         if ((boxtext[e[0]].innerHTML !== "") && (boxtext[e[1]].innerHTML !== "") && (boxtext[e[2]].innerHTML !== "")) {
+            count = count + 1;
+         }
+      })
+   }
+
+
    if (count === 8 && gameover2 !== "true") {
       info.innerHTML = "Match Draw";
       count = 0;
@@ -73,18 +142,20 @@ const checkWin = () => {
 // audio1.play();
 //main Logic.
 let boxes = document.getElementsByClassName("box");
+
 Array.from(boxes).forEach((element) => {
-   info.innerHTML = "Turn for " + turn;
-   let boxtext = element.querySelector(".boxtext");
-   element.addEventListener("click", () => {
-      boxtext.innerHTML = turn;
-      turn = changeTurn();
-      turnAudio.play();
-      checkWin();
-      if (gameover2 !== "true" && count2 !== 1) {
+   // if (gameover2 ) {
+      info.innerHTML = "Turn for " + turn;
+      let boxtext = element.querySelector(".boxtext");
+      element.addEventListener("click", () => {
+         boxtext.innerHTML = turn;
+         turn = changeTurn();
+         turnAudio.play();
+         checkWin();
+         if (gameover2 !== "true" && count2 !== 1) {
          info.innerHTML = "Turn for " + turn;
-      }
-   });
+         }
+      });
 
    reset.addEventListener("click", () => {
       // let boxtext=document.querySelectorAll(".boxtext");
@@ -96,9 +167,8 @@ Array.from(boxes).forEach((element) => {
       gif.style.display = " none";
       gameover2 = "false";
       count2 = 0;
-          document.querySelector('.line').style.width = "0vw";
+      document.querySelector('.line').style.width = "0vw";
    })
-
 
 })
 

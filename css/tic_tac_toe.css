@@ -180,7 +180,7 @@ nav{
    background-color: black;
    /* left:10.65%; */
    /* animation:harsh 1s; */
-   transition:width 1s ease-in-out;
+   transition:width 0.8s ease-in-out;
 }
 
 /* @keyframes  harsh{
